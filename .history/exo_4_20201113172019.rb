@@ -29,48 +29,48 @@
 # bien entendu, il est possible de saisir en même temps des notes sur 10 et des notes sur 20.
 
 
-# dataSaisie = ""
+dataSaisie = ""
 
-# class Grade 
+class Grade 
 
-#     def initialize#然后定义了构造函数initialize
-#       @dataStore = [] #在构造函数中，定义了一个实例变量@dataStore,该变量是一个数组。
-#     end
+    def initialize#然后定义了构造函数initialize
+      @dataStore = [] #在构造函数中，定义了一个实例变量@dataStore,该变量是一个数组。
+    end
   
-#     def add(dataSaisie) # pour add les notes
-#       @dataStore = []
-#         score = gets.chomp.to_i
-#       @dataStore.push(dataSaisie)
-#     end
+    def add(dataSaisie) # pour add les notes
+      @dataStore = []
+        score = gets.chomp.to_i
+      @dataStore.push(dataSaisie)
+    end
   
-#     def avg # pour Calcul de la moyenne 
-#       sum = 0
-#       @dataStore.each do |data|
-#         sum = sum + data
-#       while dataSaisie != 'stop'
-#         puts 'Entrez une note sur 20 ou tapez STOP si vous avez terminé' 
-#         dataSaisie = gets.chomp.downcase
-#         if dataSaisie == 'stop'
-#           break
-#         elsif dataSaisie.to_i > 20
-#         puts 'Vous avez donné une note supérieur à 20, veuillez ré-essayer'
-#         next
-#         elsif dataSaisie != '0' && dataSaisie.to_i == 0
-#         puts 'Vous n\'avez pas entré un nombre, veuillez ré-essayer'
-#         next
-#         end
-#     end
-#     p @dataStore
-#     puts avg
-#   end
+    def avg # pour Calcul de la moyenne 
+      sum = 0
+      @dataStore.each do |data|
+        sum = sum + data
+      while dataSaisie != 'stop'
+        puts 'Entrez une note sur 20 ou tapez STOP si vous avez terminé' 
+        dataSaisie = gets.chomp.downcase
+        if dataSaisie == 'stop'
+          break
+        elsif dataSaisie.to_i > 20
+        puts 'Vous avez donné une note supérieur à 20, veuillez ré-essayer'
+        next
+        elsif dataSaisie != '0' && dataSaisie.to_i == 0
+        puts 'Vous n\'avez pas entré un nombre, veuillez ré-essayer'
+        next
+        end
+    end
+    p @dataStore
+    puts avg
+  end
 
-#   puts 'Bienvenue dans le calculateur de moyenne'
-#   puts 'Veuillez entrer vos notes'
-#   object = Grade . new
-#   object.add(dataSaisie)
-#   object.avg
-#   p "les notes sont" + @dataStore
-#   puts "votre note de moyenne est" + avg
+  puts 'Bienvenue dans le calculateur de moyenne'
+  puts 'Veuillez entrer vos notes'
+  object = Grade . new
+  object.add(dataSaisie)
+  object.avg
+  p "les notes sont" + @dataStore
+  puts "votre note de moyenne est" + avg
 
     
   #首先我们定义了一个类Grade，然后定义了构造函数initialize，在构造函数中，定义了一个实例变量@dataStore,该变量是一个数组。随后定义了两个方法add和avg，分别用来添加分数、求平均分，
@@ -78,29 +78,9 @@
 
  note = ""
  notes = []
+ dataSaisie = ""
  # pour add les notes
  def add(note) # pour add les notes
     note = gets.chomp.to_i
-  notes.push(note)
-end
-
-def avg # pour Calcul de la moyenne 
-  sum = 0
-  notes.each do |note|
-    sum = sum + note
-  while note != 'stop'
-    puts 'Entrez une note sur 20 ou tapez STOP si vous avez terminé' 
-    note = gets.chomp.downcase
-    if note == 'stop'
-      break
-    elsif note.to_i > 20
-    puts 'Vous avez donné une note supérieur à 20, veuillez ré-essayer'
-    next
-    elsif note != '0' && note.to_i == 0
-    puts 'Vous n\'avez pas entré un nombre, veuillez ré-essayer'
-    next
-    end
-end
-p notes
-puts avg
+  notes.push(dataSaisie)
 end

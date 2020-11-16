@@ -16,9 +16,11 @@ puts "Entrez un mot:"
 # on créer une variable name
 # On reccueil l'entrée de l'utilisateur
 a = $stdin.gets
- 
+ def palindrome (a)
     if a == a.reverse
         puts "cet mot est un palindrome"
     else
         puts "cet mot n'est pas un palindrome"
     end
+end
+

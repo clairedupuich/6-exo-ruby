@@ -22,3 +22,5 @@ a = $stdin.gets
     else
         puts "cet mot n'est pas un palindrome"
     end
+end
+palindrome ()

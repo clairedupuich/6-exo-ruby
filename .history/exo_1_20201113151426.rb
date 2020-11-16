@@ -11,14 +11,13 @@
 
 
 
-# On affiche une question à l'utilisateur :
-puts "Entrez un mot:"
-# on créer une variable name
-# On reccueil l'entrée de l'utilisateur
-a = $stdin.gets
+
  
-    if a == a.reverse
-        puts "cet mot est un palindrome"
+ def palindrome (a)
+    if a = reverse(a)
+        puts "mot saisie est un palindrome"
     else
-        puts "cet mot n'est pas un palindrome"
+        puts "mot saisie n'est pas un palindrome"
     end
+end
+

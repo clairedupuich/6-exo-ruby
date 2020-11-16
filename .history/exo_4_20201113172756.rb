@@ -103,4 +103,3 @@ def avg # pour Calcul de la moyenne
 end
 p notes
 puts avg
-end

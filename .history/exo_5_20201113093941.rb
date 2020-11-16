@@ -62,11 +62,11 @@ alphabet.each do |i|
         i.value = i.value[0] + i.value[1]
     end
 end
-
+l.each do |i.value|
 value = letters.split("") #这个是将一串字符串转化成数组的方法 .split(%r{\s*})
 sum = value.reduce(0) {|sum, char| alphabet[char] + sum } #reduce(0)对嵌套的数组，哈希等混合数据结构进行合并或求和 括号中第一个参数是sum初始值; sum, char: 和在前，数组元素在后，中间必须以逗号隔开
 puts "votre letter, \'#{letters}\'  a value de: #{sum}"
-
+end
 
 
 #On pourra imaginer de faire un poids de la lettre * 2 si c’est une lettre majuscule.
@@ -80,5 +80,5 @@ if values1 >= 10
     values1 = values1[0]+values1[1]
 end
 value1 = letters.split("") #这个是将一串字符串转化成数组的方法 .split(%r{\s*})
-sum = value1.reduce(0) {|sum, char| alphabet1[char] + sum } #reduce(0)对嵌套的数组，哈希等混合数据结构进行合并或求和 括号中第一个参数是sum初始值; sum, char: 和在前，数组元素在后，中间必须以逗号隔开
+sum = value1.reduce(0) {|sum, char| alphabet[char] + sum } #reduce(0)对嵌套的数组，哈希等混合数据结构进行合并或求和 括号中第一个参数是sum初始值; sum, char: 和在前，数组元素在后，中间必须以逗号隔开
 puts "votre letter, \'#{letters}\'  a value de: #{sum}"
